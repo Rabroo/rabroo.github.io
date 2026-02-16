@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Brew - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,17 +15,45 @@
             <h1>Ryan Brew</h1>
             <p class="tagline">Student</p>
             <div class="contact-bar">
-                <span>Dublin, Ireland</span>
-                <a href="mailto:smokbrew@gmail.com">smokbrew@gmail.com</a>
-                <a href="https://github.com/Rabroo">github.com/Rabroo</a>
-                <a href="https://www.linkedin.com/in/ryan-brew-87a3a3373">LinkedIn</a>
+                <span class="contact-item"><span class="contact-label">Location:</span> Dublin, Ireland</span>
+                <a href="mailto:smokbrew@gmail.com" class="contact-item"><span class="contact-label">Email:</span> smokbrew@gmail.com</a>
+                <a href="https://github.com/Rabroo" class="contact-item"><span class="contact-label">GitHub:</span> Rabroo</a>
+                <a href="https://www.linkedin.com/in/ryan-brew-87a3a3373" class="contact-item"><span class="contact-label">LinkedIn:</span> Ryan Brew</a>
             </div>
         </header>
 
         <main>
             <section>
                 <h2>Profile</h2>
-                <p>Transition Year Student at St Andrews College Dublin interested in Film, Machine Learning and Investing</p>
+                <p>Transition Year student at St Andrews College Dublin with interests in film, machine learning, and investing.</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Transition Year</span>
+                        <span class="entry-date">2025 &ndash; 2026</span>
+                    </div>
+                    <div class="entry-subtitle">St Andrews College, Dublin</div>
+                    <ul>
+                        <li>Junior Cycle: 3 Distinctions (Maths, Science, Spanish)</li>
+                        <li>Junior Cycle: 4 Higher Merits (Business, History, Geography, English)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Achievements</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Highly Commended &ndash; Stripe Young Scientist 2026</span>
+                    </div>
+                    <div class="entry-subtitle">BT Young Scientist &amp; Technology Exhibition</div>
+                    <ul>
+                        <li>Received a Highly Commended award at the 2026 BT Young Scientist exhibition</li>
+                    </ul>
+                </div>
             </section>
 
             <section>
@@ -30,10 +61,10 @@
 
                 <div class="entry">
                     <div class="entry-header">
-                        <span class="entry-title">Transition Year Work Experience 2</span>
+                        <span class="entry-title">TY Programme Participant</span>
                         <span class="entry-date">January 2026</span>
                     </div>
-                    <div class="entry-subtitle">Eirgrid</div>
+                    <div class="entry-subtitle">EirGrid</div>
                     <ul>
                         <li>Participated in EirGrid's Transition Year programme</li>
                         <li>Attended presentations from EirGrid representatives across departments</li>
@@ -43,7 +74,7 @@
 
                 <div class="entry">
                     <div class="entry-header">
-                        <span class="entry-title">Transition Year Work Experience 1</span>
+                        <span class="entry-title">Assistant Director / Video Dept.</span>
                         <span class="entry-date">November 2025</span>
                     </div>
                     <div class="entry-subtitle">Ardmore Studios</div>
@@ -69,18 +100,16 @@
             </section>
 
             <section>
-                <h2>Education</h2>
+                <h2>Projects</h2>
 
                 <div class="entry">
                     <div class="entry-header">
-                        <span class="entry-title">Transition Year</span>
-                        <span class="entry-date">2025 &ndash; 2026</span>
+                        <span class="entry-title">Personal CV Site</span>
                     </div>
-                    <div class="entry-subtitle">St Andrews College, Dublin</div>
+                    <div class="entry-subtitle"><a href="https://rabroo.github.io">rabroo.github.io</a></div>
                     <ul>
-                        <li>Junior Cycle: 3 Distinctions (Maths, Science, Spanish)</li>
-                        <li>Junior Cycle: 4 Higher Merits (Business, History, Geography, English)</li>
-                        <li>Highly Commended &ndash; Stripe Young Scientist 2026</li>
+                        <li>Built and deployed a personal CV website using HTML and CSS</li>
+                        <li>Hosted on GitHub Pages with a custom domain</li>
                     </ul>
                 </div>
             </section>
@@ -90,19 +119,35 @@
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Technical</h3>
-                        <p>Python, Machine Learning, Git, Web Development</p>
+                        <div class="skill-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Web Development</span>
+                        </div>
                     </div>
                     <div class="skill-category">
                         <h3>Film</h3>
-                        <p>Assistant Directing, Production</p>
+                        <div class="skill-tags">
+                            <span class="tag">Assistant Directing</span>
+                            <span class="tag">Production</span>
+                        </div>
                     </div>
                     <div class="skill-category">
                         <h3>Business</h3>
-                        <p>Investing, Financial Literacy, Research</p>
+                        <div class="skill-tags">
+                            <span class="tag">Investing</span>
+                            <span class="tag">Financial Literacy</span>
+                            <span class="tag">Research</span>
+                        </div>
                     </div>
                     <div class="skill-category">
                         <h3>Soft Skills</h3>
-                        <p>Teamwork, Communication, Problem Solving</p>
+                        <div class="skill-tags">
+                            <span class="tag">Teamwork</span>
+                            <span class="tag">Communication</span>
+                            <span class="tag">Problem Solving</span>
+                        </div>
                     </div>
                 </div>
             </section>
